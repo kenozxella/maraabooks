@@ -2,27 +2,42 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Perpustakaan bukuku</title>
+  <title>Novel Karyaku</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>📚 Novel Karyaku</h1>
-    <p>Pilih genre untuk mulai membaca</p>
-  </header>
+<!-- MENU BUTTON -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-  <div class="genre">
-    <button onclick="openGenre('novel')">novel</button>
-    <button onclick="openGenre('bio grafi islami')">bio grafi islami</button>
+<!-- SETTINGS PANEL -->
+<div class="settings-panel" id="settingsPanel">
+  <h3>Pengaturan</h3>
+
+  <div class="setting-item">
+    <span>Mode Gelap</span>
+    <button onclick="toggleTheme()">🌙 / ☀️</button>
   </div>
 
-  <section id="content">
-    <p>Silakan pilih genre buku</p>
-  </section>
+  <!-- SETTING BARU BISA DITAMBAH DI SINI -->
+  <!--
+  <div class="setting-item">
+    <span>Ukuran Font</span>
+    <button>A+</button>
+  </div>
+  -->
+</div>
 
-  <script src="script.js"></script>
+<header>
+  <h1>📚 Novel Karyaku</h1>
+  <p>Pilih genre untuk mulai membaca</p>
+</header>
+
+<main class="container">
+  <button class="genre-btn">Romance</button>
+  <button class="genre-btn">Fantasy</button>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
