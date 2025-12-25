@@ -87,3 +87,43 @@ header {
   color: white;
   cursor: pointer;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: #3b82f6;
+  color: white;
+  padding: 20px;
+}
+
+.genre {
+  margin: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+#content {
+  background: white;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
