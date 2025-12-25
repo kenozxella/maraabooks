@@ -2,62 +2,64 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Novel Karyaku</title>
+  <title>Perpustakaan Karyaku</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- MENU BUTTON -->
+<!-- BUTTON MENU -->
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-<!-- SETTINGS PANEL -->
-<div class="settings-panel" id="settingsPanel">
-  <h3>Pengaturan</h3>
+<!-- MENU SIDEBAR -->
+<div class="menu-panel" id="menuPanel">
 
-  <div class="setting-item">
-    <span>Mode Gelap</span>
-    <button onclick="toggleTheme()">🌙 / ☀️</button>
+  <div class="menu-content">
+    <h3>Menu</h3>
+
+    <a href="#">Beranda</a>
+    <a href="#">Novel</a>
+    <a href="#">Pahlawan Islam</a>
+    <a href="#">Sejarah</a>
+
+    <hr>
+
+    <div class="setting-item">
+      <span>Mode Gelap</span>
+      <button onclick="toggleTheme()">🌙 / ☀️</button>
+    </div>
   </div>
 
-  <!-- SETTING BARU BISA DITAMBAH DI SINI -->
-  <!--
-  <div class="setting-item">
-    <span>Ukuran Font</span>
-    <button>A+</button>
+  <!-- PROFIL DI BAWAH MENU -->
+  <div class="menu-profile">
+    <img src="profile.jpg" alt="Profil Penulis">
+
+    <div class="profile-info">
+      <strong>Nama Penulis</strong>
+      <p>
+        Penulis buku & cerita sejarah yang suka berbagi ilmu
+        dan kisah inspiratif.
+      </p>
+
+      <div class="support">
+        <span>Please support</span>
+        <a href="https://instagram.com/username" target="_blank">Instagram</a>
+      </div>
+    </div>
   </div>
-  -->
+
 </div>
 
 <header>
-  <h1>📚 Novel Karyaku</h1>
-  <p>Pilih genre untuk mulai membaca</p>
+  <h1>📚 Perpustakaan Karyaku</h1>
+  <p>Pilih buku untuk mulai membaca</p>
 </header>
 
 <main class="container">
-  <button class="genre-btn">Romance</button>
-  <button class="genre-btn">Fantasy</button>
+  <button class="genre-btn" onclick="openGenre('novel')">Novel</button>
+  <button class="genre-btn" onclick="openGenre('pahlawan')">Pahlawan Islam</button>
+  <button class="genre-btn" onclick="openGenre('sejarah')">Sejarah</button>
 </main>
 
 <script src="script.js"></script>
 </body>
 </html>
-<!-- PROFIL DI BAWAH MENU -->
-<div class="menu-profile">
-  <img src="profile.jpg" alt="Profil Penulis">
-
-  <div class="profile-info">
-    <strong>Nama Penulis</strong>
-    <p>
-      Penulis novel fiksi yang suka merangkai cerita tentang
-      perasaan, konflik, dan dunia imajinasi.
-    </p>
-
-    <div class="support">
-      <span>Please support</span>
-      <a href="https://instagram.com/username" target="_blank">
-        Instagram
-      </a>
-    </div>
-  </div>
-</div>
-
