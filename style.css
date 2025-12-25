@@ -107,3 +107,8 @@ body {
   transition: 0.3s;
 }
 
+.ig-link img {
+  width: 16px;
+  height: 16px;
+}
+
