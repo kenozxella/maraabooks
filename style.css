@@ -87,3 +87,23 @@ header { text-align: center; padding: 60px 20px 40px; }
   color: white;
   cursor: pointer;
 }
+:root {
+  --bg: #f9fafb;      /* Light background */
+  --text: #1f2937;    /* Light text */
+  --card: #ffffff;
+  --primary: #3b82f6;
+}
+
+body.dark {
+  --bg: #0f172a;      /* Dark background */
+  --text: #e5e7eb;    /* Dark text */
+  --card: #1e293b;
+  --primary: #60a5fa;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
