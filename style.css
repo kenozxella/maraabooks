@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
-/* LIGHT MODE */
-:root {
-  --bg: #f9fafb;
-  --text: #1f2937;
-  --card: #ffffff;
-  --primary: #3b82f6;
-}
-
-/* DARK MODE */
-body.dark {
-  --bg: #0f172a;
-  --text: #e5e7eb;
-  --card: #1e293b;
-  --primary: #60a5fa;
-}
-
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
@@ -24,7 +6,7 @@ body {
   transition: 0.3s;
 }
 
-/* HAMBURGER BUTTON */
+/* MENU BUTTON */
 .menu-btn {
   position: fixed;
   top: 15px;
@@ -34,49 +16,67 @@ body {
   z-index: 1000;
 }
 
-/* SETTINGS PANEL */
-.settings-panel {
+/* MENU PANEL */
+.menu-panel {
   position: fixed;
   top: 0;
   left: -260px;
-  width: 240px;
+  width: 260px;
   height: 100%;
   background: var(--card);
   box-shadow: 2px 0 10px rgba(0,0,0,0.2);
-  padding: 20px;
   transition: 0.3s;
-  z-index: 999;
-}
-
-.settings-panel.open {
-  left: 0;
-}
-
-.setting-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 15px 0;
+  flex-direction: column;
 }
 
+.menu-panel.open { left: 0; }
+
+.menu-content { padding: 20px; flex: 1; }
+.menu-content a {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+hr { border: none; border-top: 1px solid #ccc; margin: 20px 0; }
+
+.setting-item { display: flex; justify-content: space-between; align-items: center; }
 .setting-item button {
   border: none;
   background: var(--primary);
   color: white;
-  padding: 6px 10px;
+  padding: 5px 8px;
   border-radius: 6px;
   cursor: pointer;
 }
 
-header {
-  text-align: center;
-  padding: 60px 20px 40px;
+/* PROFIL DI BAWAH */
+.menu-profile {
+  display: flex;
+  gap: 12px;
+  padding: 15px 20px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  font-size: 12px;
 }
 
-.container {
-  text-align: center;
-}
+.menu-profile img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
 
+.profile-info strong { font-size: 13px; display: block; margin-bottom: 4px; }
+
+.profile-info p { margin: 0 0 8px; color: #6b7280; line-height: 1.4; }
+
+.support { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.support span { color: #9ca3af; }
+.support a { color: var(--primary); text-decoration: none; font-weight: bold; }
+
+/* HEADER */
+header { text-align: center; padding: 60px 20px 40px; }
+
+/* CONTAINER GENRE */
+.container { text-align: center; }
 .genre-btn {
   margin: 10px;
   padding: 15px 35px;
@@ -87,43 +87,3 @@ header {
   color: white;
   cursor: pointer;
 }
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-  margin: 0;
-}
-
-header {
-  background-color: #3b82f6;
-  color: white;
-  padding: 20px;
-}
-
-.genre {
-  margin: 30px;
-}
-
-button {
-  padding: 15px 30px;
-  margin: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: #2563eb;
-  color: white;
-}
-
-button:hover {
-  background-color: #1e40af;
-}
-
-#content {
-  background: white;
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-}
-
